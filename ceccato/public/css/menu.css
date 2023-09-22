@@ -1,0 +1,183 @@
+@import url('/stylesheets/fontawesome/css/all.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+#menu-icon {
+    position: fixed;
+    cursor: pointer;
+    display: inline;
+    z-index: 20;
+    top: 2rem;
+    right: 2.4rem;
+    margin-top:-5px;
+}
+@media (min-width: 700px) {
+    #menu-icon {
+        display: none;
+    }
+}
+#barra-1, #barra-2, #barra-3 {
+    display: block;
+    width: 3.5rem;
+    height: 0.4rem;
+    background-color: #0a80e9;
+    margin: 0.8rem 0;
+    transition: .5s;
+}
+#menu-icon.trasforma #barra-2 {
+    opacity: 0;
+}
+#menu-icon.trasforma #barra-1 {
+    transform: rotate(-45deg) translate(-0.8rem, 0.8rem);
+}
+#menu-icon.trasforma #barra-3 {
+    transform: rotate(45deg) translate(-0.8rem, -0.8rem);
+}
+#menu {
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255 255 255 / 1);
+}
+#menu.chiudi {
+    transform: translateX(-100vw);
+    transition: all .4s ease-in-out;
+}
+#menu.attiva {
+    transform: translateX(0);
+    transition: all .4s ease-in-out;
+}
+.navbar{
+    background-color: #333;
+    /* height: 50px; */
+    
+       
+    
+}
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+   a {
+    float: none;
+    color: white;
+    padding: 12px 6px;
+    text-decoration: none;
+    
+  }
+  
+ 
+nav ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    list-style: none;
+    align-items: flex-start;
+    padding: 2rem;
+    
+    
+}
+
+nav ul li {
+    margin: 1.2rem 0;
+    
+}
+nav a {
+    color: #0a80e9;
+    text-decoration: none;
+    letter-spacing: 2px;
+    
+}
+
+.home > a{
+    color:red;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.logina > a{
+    
+    color:#ffc800;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.luce > a{
+    color:green;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.cancello > a{
+    color:gray;
+    font-family: 'Roboto', sans-serif;
+}
+a:hover {
+    background-color: brown;
+    border-radius: 5px;
+    border: 1px solid #0088b3;
+    
+  }
+.home a:hover {
+    background-color: red;
+    border-radius: 5px;
+    border: 1px solid #0088b3;
+    color:black;
+}
+.logina a:hover {
+    background-color: #ffc800;
+    border-radius: 5px;
+    border: 1px solid #0088b3;
+    color:black;
+}
+.luce a:hover {
+    background-color: green;
+    border-radius: 5px;
+    border: 1px solid #0088b3;
+    color:black;
+}
+.cancello a:hover {
+    background-color: gray;
+    border-radius: 5px;
+    border: 1px solid #0088b3;
+    color:black;
+}
+@media (min-width: 700px) {
+    #menu {
+        position: relative;
+        width: auto;
+        height: 5rem;
+        background-color: rgba(255 255 255 / 1);
+    }
+    #menu.chiudi {
+        transform: translateX(0);
+    }
+    .navbar{
+        background-color: #333;
+        height: 50px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        height: 50px;
+        
+    }
+    nav, nav ul {
+        height: 5vh;
+    }
+    nav li {
+        padding: 1rem;
+        margin-right: 1rem;
+    }
+}

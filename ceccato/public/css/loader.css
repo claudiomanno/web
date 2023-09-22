@@ -1,0 +1,43 @@
+/* <div id="wrapper-loader"> questo lo uso per creare una schermata nera
+<!-- tramite il div verrà creato il loader -->
+<div id="loader"></div> questo lo uso per creare una ruota
+</div> */
+
+#wrapper-loader{
+    position: fixed;
+    /* invece di usare top,bottom,left,right: uso inset */
+    inset:0;
+    height: 100vh;
+    width: 100vw;
+    /* per centrare il loader al centro dello schermo */
+    display: grid;
+    place-items: center;
+    background-color: #111;
+    z-index: 30;
+}
+#loader{
+    width: 5rem;
+    height: 5rem;
+    border:3px solid;
+    /* da quadrato lo faccio diventare un cerchio */
+    border-radius:50%;
+    border-color: red;
+    /* rimuovo la parte superiore */
+    border-top-color: transparent;
+    animation: loader 1s linear infinite;
+}
+/* creo il codice per l'animazione dichiarata sopra */
+@keyframes loader {
+    20%{
+        border-color: goldenrod;
+        border-top-color: transparent;
+    }
+    60%{
+        border-color: purple;
+        border-top-color: transparent;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* tramite js il loader lo faccio vedere solo quando carica la pagina */

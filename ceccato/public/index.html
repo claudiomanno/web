@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Corso IOT
+    </title>
+    <link type="text/css" rel="stylesheet" href="./css/menu.css">
+    <link type="text/css" rel="stylesheet" href="./css/loader.css">
+    <link type="text/css" rel="stylesheet" href="./css/stile.css">
+    <link type="text/css" rel="stylesheet" href="./css/login.css">
+    <!-- <link type="text/css" rel="stylesheet" href="./css/luce.css">   -->
+    <script type="module" src="./js/main.js"></script>
+   
+</head>
+<body>
+    <!-- creo loader -->
+    <div id="wrapper-loader">
+        <!-- tramite il div verrà creato il loader -->
+        <div id="loader"></div>
+    </div>
+
+    <!-- creo elemento per il menù -->
+    <header id="idnav" class="navbar">
+        
+       
+        
+    </header>
+    <!-- messaggi -->
+    <div  id="alert" class="alert">
+          <div id="alert1">
+           
+          </div>
+    </div>
+   
+
+    <!-- contenuto della pagina  -->
+    <!-- luce accendi spegni -->
+    <section id="page-1">
+        <section class="grid sezione-1 full">
+            <div>
+                <button class="button" id="on">Esegue il comando ls in remoto
+                    <div class="acceso" id="acceso">?</div>
+                </button>
+               
+            </div>
+            <!-- <div>
+                <button class="button button2" id="off">Spegni
+                    <div class="acceso" id="spento">spento</div>
+                </button>
+            </div> -->
+        </section>
+    </section>
+    <!-- home -->
+   <section id="page-2">
+    <div class="wrapper">
+        <img class="classname" src="./../img/iot.jpg" alt="" />
+    </div>
+   </section>
+
+   <!-- login -->
+   <section id="idlogin">
+
+        <div class="login">
+            <div class="login-header">
+            <h1>Login</h1>
+            </div>
+            <div class="login-form">
+                <form action="" name="form_app" id="form_app">
+                    <h3>Username:</h3>
+                    <input type="text" id="username" name="username" placeholder="Username"/><br>
+                    <h3>Password:</h3>
+                    <input type="password" id="password" name="password" placeholder="Password"/>
+                    <br>
+                    <input type="button" value="login"   id="send" class="login-button"/>
+                    <br>
+                </form>
+                <div class="error-page">
+                    <div id="esitologin" class="try-again"></div>
+                </div>
+            </div>
+        </div>
+   </section>
+</body>
+</html>
